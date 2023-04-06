@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Drag and Drop Demo</title>
+    <link rel="stylesheet" href="./styleDnD.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Drag from here:</h1>
+        <div class="drag-from">
+            <div class="box">
+                <div class="item" id="srcA" style="background-color: red" draggable="true" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">A</div>
+            </div>
+            <div class="box">
+				<div class="item" id="srcB" style="background-color: green" draggable="true" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">B</div>
+			</div>
+            <div class="box">
+				<div class="item" id="srcC" style="background-color: blue" draggable="true" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">C</div>			
+			</div>	
+			<div class="box">
+				<div class="item" id="srcD" style="background-color: pink" draggable="true" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">D</div>			
+			</div>
+			<div class="box">
+				<div class="item" id="srcE" style="background-color: magenta" draggable="true" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">E</div>			
+			</div>
+			<div class="box">
+				<div class="item" id="srcF" style="background-color: turquoise" draggable="true" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">F</div>			
+			</div>
+        </div>
+		
+            <h1>Drop here:</h1>
+        <div class="drop-to">
+            <div class="box">
+				<div class="item" id="tgt1" style="background-color: grey" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragleave="dragleave_handler(event);"></div>			
+			</div>
+            <div class="box">
+				<div class="item" id="tgt2" style="background-color: grey" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragleave="dragleave_handler(event);"></div>			
+			</div>
+            <div class="box">
+				<div class="item" id="tgt3" style="background-color: grey" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragleave="dragleave_handler(event);"></div>			
+			</div>
+			<div class="box">
+				<div class="item" id="tgt4" style="background-color: grey" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragleave="dragleave_handler(event);"></div>			
+			</div>
+			<div class="box">
+				 <button class="button" id="go" type="button" onclick="processGo()">GO</button>
+			</div>			
+        </div>
+	<label for="response">DnD working on PC, not on mobile phone:</label>
+  	<input id="response" name="response" type="text" required minlength="0" maxlength="12" size="12">
+    </div>
+    <script src="./app1DnD.js"></script>
+	
+</body>
+
+</html>
