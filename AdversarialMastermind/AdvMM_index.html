@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adversarial MasterMind</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./AdversarialMM_style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Adversarial MasterMind</h1>
+  <br>
+  <br>
+  <label for="symbols">Number of Symbols (1-26):</label>
+  <input type="number" id="symbols" name="symbols" value="6"
+       min="1" max="26">
+  <br>
+  <br>
+  <label for="length">Length of Word (1-10):</label>
+  <input type="number" id="length" name="length" value="4"
+       min="1" max="10">
+  <br>
+  <br>
+  <button class="resetButton" type="button" onclick="processReset()">Reset</button>
+  <br>
+  <br>
+  <label for="message">In try box, use symbols A, B, C...  as needed,</label>
+  <br>
+  <label>then press return.</label>
+  <br>
+  <br>
+  <!--
+  <input id="message" name="message" type="text" size="10">
+  <br>
+  <br>
+  -->
+  <label for="try">Try: </label>
+  <input id="try" name="try" type="text" size="4" onchange="processResponse()" onclick="processResponse()">
+  <label for="response">Check:</label>
+  <input id="response" name="response" type="text" required minlength="0" maxlength="12" size="12" >
+  <br>
+  <br>
+  <div id = "dv">
+	<table id="resultsTable">
+		<tr><td id="t1"> </td></tr>
+	</table>
+  </div>
+  <script type="text/javascript" src="./AdversarialMM_initialise.js"></script>
+  <script type="text/javascript" src="./AdversarialMM_responseScript.js"></script>
+</body>
+</html>
