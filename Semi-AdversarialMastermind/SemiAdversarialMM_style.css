@@ -1,0 +1,51 @@
+body {
+  background: #000;
+  color: #aff;
+  padding: 1px;
+  margin: 1px;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+table{ 
+margin-right: auto;
+margin-left: auto;
+}
+.actions {
+  text-align: center;
+  margin-top: 30px;
+}
+.actions a {
+  background-color: #9DD1F1;
+  border-radius: 3px;
+  color: #004E89;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 1px;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.answer {
+  border: 1px solid #466995;
+  margin: 1px;
+  display: inline-block;
+  margin: 1px;
+  padding: 1px;
+}
+
+.answer:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}
+.dv {
+  border: 1px solid #466995;
+  margin: 1px;
+  display: inline-block;
+  margin: 1px;
+  padding: 1px;
+  text-align: center;
+}
