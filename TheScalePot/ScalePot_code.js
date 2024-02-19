@@ -199,6 +199,7 @@ window.onload = (event) => {
 
 function windowClose() { 
 	window.open('','_parent','');
+	window.open('','_parent','');
 	window.close();	
 	} 
 
